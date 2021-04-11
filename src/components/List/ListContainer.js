@@ -3,7 +3,7 @@ import List from './List';
 import {getColumnsForList, createActionAddColumn} from '../../redux/columnsRedux.js';
 
 const mapStateToProps = (state, props) => ({
-  columns: getColumnsForList(state, props.id),
+  columns: getColumnsForList(state, props.id), // filtrowanie kolumn o odpowiednim parapetrze, w pierwszym argumencie zawsze powinien przyjnować "state" czyli cały stan aplikacji
 });
 
 const mapDispatchToProps = (dispatch, props) => ({
