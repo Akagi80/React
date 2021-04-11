@@ -6,13 +6,13 @@ import ReactHtmlParser from 'react-html-parser';
 const Hero = props => (
   <header className={styles.component}>
     <h2 className={styles.title}>{ReactHtmlParser(props.titleText)}</h2>
-    <img className={styles.image} src={props.imagePic}></img>
+    <img className={styles.image} src={props.image}></img>
   </header>
 );
 
 Hero.propTypes = {
   titleText: PropTypes.node.isRequired,
-  imagePic: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };
 
 export default Hero;
